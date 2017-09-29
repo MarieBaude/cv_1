@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TYPO !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@font-face {
+  font-family: 'annabellemedium';
+  src:  url('font/annabelle-webfont.eot');
+  src:  url('font/annabelle-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/annabelle-webfont.woff2') format('woff2'),
+        url('font/annabelle-webfont.woff') format('woff'),
+        url('font/annabelle-webfont.ttf') format('truetype'),
+        url('font/annabelle-webfont.svg#annabellemedium') format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+@font-face {
+  font-family: 'chelsearegular';
+  src:  url('font/chelsea-webfont.eot');
+  src:  url('font/chelsea-webfont.eot?#iefix') format('embedded-opentype'),
+        url('font/chelsea-webfont.woff2') format('woff2'),
+        url('font/chelsea-webfont.woff') format('woff'),
+        url('font/chelsea-webfont.ttf') format('truetype'),
+        url('font/chelsea-webfont.svg#chelsearegular') format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! AUTRE !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+body {
+  font-family: Verdana, Arial, sans-serif
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+#bar {
+  border-left: 2px solid black;
+  margin: 3%
+}
+
+ul {
+  list-style: none
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 3% 0 5%
+}
+
+h3 {
+  font-family: 'chelsearegular', Arial, serif;
+  font-size: 1.8em;
+  margin: 4% 0 2%;
+  text-transform: uppercase
+}
+
+h5 {
+  font-weight: bold
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+header {
+  text-align: center
+}
+
+h1 {
+  font-family: 'annabellemedium', Arial, serif;
+  font-size: 4em;
+  margin-top: 2%
+}
+
+h2 {
+  font-family: 'annabellemedium', Arial, serif;
+  color: #008fff;
+  margin-bottom: 1.5%;
+  font-size: 3em
+}
+
+header > ul {
+  font-size: 1.5em;
+  font-family: 'chelsearegular', Arial, sans-serif;
+  margin-bottom: 1.5%
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SECTION GAUCHE !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+#left {
+  text-align: right
+}
+
+.circle_ps, .circle_ai, .circle_id, .circle_xd {
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  border: 2px solid black;
+  margin-left: 3%;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.circle_ps:hover {
+  border: 2px solid #3accf6;
+  color: #3accf6
+}
+
+.circle_ai:hover {
+  border: 2px solid #ff8823;
+  color: #ff8823
+}
+
+.circle_id:hover {
+  border: 2px solid #ff4994;
+  color: #ff4994
+}
+
+.circle_xd:hover {
+  border: 2px solid #f914bf;
+  color: #f914bf
+}
+
+#skill {
+  display: flex;
+  justify-content: flex-end
+}
+
+h4 {
+  font-size: 1.2em;
+  margin: 2% 0 3%;
+  color: #008fff
+}
+
+.option {
+  font-size: 0.9em !important
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SECTION DROITE !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.text_italic {
+  margin: 1% 0 2%;
+  font-style: italic
+}
+
+.list_right {
+  margin-bottom: 2%
+}
+
+.list_right > li:first-child {
+  font-weight: bold;
+  margin-bottom: 1%
+}
+
+.list_right > li:nth-child(n+2) {
+  margin-left: 3%
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media screen and (max-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse
+  }
+
+  #bar {
+    overflow: hidden
+  }
+
+  #skill {
+    justify-content: flex-start
+  }
+
+  #left, #right{
+    text-align: left;
+    margin-left: 5%
+  }
+
+  .circle_ps, .circle_ai, .circle_id, .circle_xd {
+    font-size: 3vw;
+    width: 8vw;
+    height: 8vw
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  h1 {
+    font-size: 3em
+  }
+
+  h2 {
+    font-size: 2.5em
+  }
+
+  #left, #right{
+    text-align: left;
+    margin: 0 3% 0 5%
+  }
+
+  #skill {
+    flex-direction: column;
+    align-items: center
+
+  }
+
+  .circle_ps, .circle_ai, .circle_id, .circle_xd {
+    font-size: 6vw;
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: 5vw
+  }
+
+  .text_italic {
+    margin-top: 5%;
+  }
+
+}
