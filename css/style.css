@@ -16,8 +16,37 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: baseline
 }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! TYPO !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @font-face {
   font-family: 'annabellemedium';
@@ -30,6 +59,7 @@ time, mark, audio, video {
   font-weight: normal;
   font-style: normal
 }
+
 @font-face {
   font-family: 'chelsearegular';
   src:  url('font/chelsea-webfont.eot');
@@ -41,6 +71,7 @@ time, mark, audio, video {
   font-weight: normal;
   font-style: normal
 }
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! AUTRE !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 body {
   font-family: Verdana, Arial, sans-serif
@@ -49,15 +80,6 @@ body {
 a {
   text-decoration: none;
   color: black
-}
-
-#bar {
-  border-left: 2px solid black;
-  margin: 3%
-}
-
-ul {
-  list-style: none
 }
 
 main {
@@ -69,12 +91,17 @@ main {
 h3 {
   font-family: 'chelsearegular', Arial, serif;
   font-size: 1.8em;
-  margin: 4% 0 2%;
+  margin: 4% 0 3%;
   text-transform: uppercase
 }
 
 h5 {
   font-weight: bold
+}
+
+#bar {
+  border-left: 2px solid black;
+  margin: 3%
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -102,8 +129,24 @@ header > ul {
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SECTION GAUCHE !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+h4 {
+  font-size: 1.2em;
+  margin: 4% 0 2%;
+  color: #008fff
+}
+
 #left {
   text-align: right
+}
+
+#skill {
+  display: flex;
+  justify-content: flex-end
+}
+
+#skill > div {
+  display: flex;
+  flex-direction: row
 }
 
 .circle_ps, .circle_ai, .circle_id, .circle_xd {
@@ -111,7 +154,7 @@ header > ul {
   width: 5vw;
   height: 5vw;
   border: 2px solid black;
-  margin-left: 3%;
+  margin-left: 5%;
   font-size: 2vw;
   display: flex;
   justify-content: center;
@@ -138,19 +181,8 @@ header > ul {
   color: #f914bf
 }
 
-#skill {
-  display: flex;
-  justify-content: flex-end
-}
-
-h4 {
-  font-size: 1.2em;
-  margin: 2% 0 3%;
-  color: #008fff
-}
-
 .option {
-  font-size: 0.9em !important
+  font-size: 0.9em
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SECTION DROITE !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -193,12 +225,12 @@ h4 {
   }
 
   .circle_ps, .circle_ai, .circle_id, .circle_xd {
-    font-size: 3vw;
-    width: 8vw;
-    height: 8vw
+    font-size: 4vw;
+    width: 10vw;
+    height: 10vw
   }
-}
 
+}
 
 @media screen and (max-width: 500px){
   h1 {
@@ -221,9 +253,9 @@ h4 {
   }
 
   .circle_ps, .circle_ai, .circle_id, .circle_xd {
-    font-size: 6vw;
-    width: 15vw;
-    height: 15vw;
+    font-size: 10vw;
+    width: 25vw;
+    height: 25vw;
     margin-bottom: 5vw
   }
 
